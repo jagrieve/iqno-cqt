@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% assign items = site[page.collection] %}
+
+<div class="page">
+
+  {{content}}
+  
+  <hr />
+  
+  {% if item.nodate %}
+    {% assign sorted = items %}
+  {% else %}
+    {% assign sorted = (items | sort: 'date') | reverse %}
+  {% endif %}
+  
+  {% for item in sorted %}
+  <div class="item">
+    <h2>
+      {% if item.link %}
+      <a href="{{ item.link }}">{{ item.name }}</a>
+      {% else %}
+      <a href="{{ item.url }}">{{ item.name }}</a>
+      {% endif %}
+    </h2>
+    <p>
+      {% unless item.nodate %}
+      <span class="date">{{ item.date | date: "%b, %Y" }}</span>
+      {% endunless %}
+      {% if item.where %}
+      <span class="source">&mdash; {{ item.where }}<span><br />
+      {% endif %}
+      {{item.content | markdownify}}
+    </p>
+  </div>
+  {% endfor %}
+</div>

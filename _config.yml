@@ -1,0 +1,49 @@
+title: Integrated Quantum <strong>& Nonlinear Optics</strong>
+tagline: 'Centre for Quantum Technologies'
+description: "Research into integrated devices for QIP and the quantum internet at Singapore's Centre for Quantum Technologies."
+baseurl: ''
+url: ''
+twitter_username: 
+github_username: 
+
+gems:
+ - jekyll-paginate
+ - jekyll/scholar
+ - bourbon
+
+sass:
+  sass_dir: assets/scss
+  style: expanded # compressed
+
+scholar:
+  source: ./assets/
+  bibliography: papers.bib
+  bibliography_template: bib
+  repository: '/assets/papers'
+
+collections:
+  research:
+    output: false
+    order:
+      - quantum-emitters.md
+      - flexible-chips.md
+      - qkd-networks.md
+
+permalink: pretty
+paginate: 30
+
+exclude:
+  - media.md
+  - _media
+  - research.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+

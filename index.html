@@ -1,0 +1,25 @@
+---
+layout: default
+title: Home
+---
+
+
+  <div class="container">
+  
+    <h2>Recent news</h2>
+
+    {% for post in paginator.posts %}
+      <article class="post-item">
+        <p><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>  — <strong>{{ post.title }}</strong> — <span> {{ post.content | remove: "<p>" | remove: "</p>"}}</span> {% if post.more %} <a class="post-link readmore" href="{{ post.more }}">Read more here.</a>{% endif %}</p>
+      </article>
+    {% endfor %}
+
+
+
+  <div class="container">
+    {% include pagination.html %}
+  </div>
+  
+
+
+

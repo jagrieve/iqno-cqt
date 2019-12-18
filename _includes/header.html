@@ -1,0 +1,33 @@
+      <header class="site-header">
+      
+        <nav class="nav">
+          <div class="container">
+          
+            <h1 class="logo">
+              <a href="/{{ site.baseurl }}">{{ site.title }}</a>
+            </h1>
+            
+            <ul class="navbar">
+            {% for node in site.pages %}
+              {% if node.title != null %}
+                {% if node.layout == "page" or node.layout == "collection" %}
+              <li>
+                <a{% if page.url == node.url %} class="active"{% endif %} href="{{ node.url }}">{{ node.title }}</a>
+              </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            </ul>
+            
+          </div>
+        </nav>
+        
+      </header>
+      
+      <section class="intro">
+        
+        <div class="container">
+          {% include intro.html %}
+        </div>
+        
+      </section>

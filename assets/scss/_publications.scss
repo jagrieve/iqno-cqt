@@ -1,0 +1,40 @@
+/* Styling publications */
+
+ol.bibliography {
+  margin-top: 2em;
+  list-style-type: circle;
+ 
+  li {
+    margin-bottom: 1em;
+   
+    .authors {
+      color: $medium-gray-color;
+    }
+    
+    .author {
+      display: inline-block;
+    }
+    
+    .journal {
+      font-style: italic;
+    }
+    
+    .links {
+      font-size: 0.7rem;
+      margin-right: 0.1rem;
+      
+      a {
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0.2rem;
+        border-radius: 0.3em;
+        border-width: 0;
+        color: $white-color;
+        background-color: $primary-color;
+        text-decoration: none;
+      }
+      
+    }
+   
+  }
+}
