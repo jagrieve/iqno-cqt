@@ -2,9 +2,10 @@ title: Integrated Quantum <strong>& Nonlinear Optics</strong>
 tagline: 'Centre for Quantum Technologies'
 description: "Research into integrated devices for QIP and the quantum internet at Singapore's Centre for Quantum Technologies."
 baseurl: ''
-url: ''
-twitter_username: 
-github_username: 
+url: 'https://iqno.quantumlah.org'
+github_username: 'jagrieve'
+
+og_locale: 'en_SG'
 
 gems:
  - jekyll-paginate
