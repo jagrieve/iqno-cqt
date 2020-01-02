@@ -15,8 +15,7 @@
       {% endcapture %}
   {% else %}
       {% capture page_title %}
-          {% if page.slug == 'category' %}Categoria: {% endif %}
-          {% if page.slug == 'tag' %}Tag: {% endif %} {{ page.title }} | {{ site.title | strip_html }}
+          {{ page.title }} | {{ site.title | strip_html }} | {{ site.tagline }}
       {% endcapture %}
   {% endif %}
   {% capture page_title %}
@@ -47,33 +46,22 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   
-    <!-- Social: Facebook / Open Graph -->
+  <!-- Open Graph, Facebook, Twitter etc, -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:title" content="{{ page_title }}">
-  <meta property="og:image" content="{{ page_image }}">
   <meta property="og:description" content="{{ page_description | strip_html | strip | rstrip | strip_newlines }}">
+  <meta property="og:image" content="{{ page_image }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:site_name" content="{{ site.title | strip_html }}">
   <meta property="og:locale" content="{{ site.og_locale }}">
-
-  <!-- Social: Twitter -->
-  <meta name="twitter:card" content="{{ site.twitter_card }}">
-  <meta name="twitter:site" content="{{ site.twitter_site }}">
-  <meta name="twitter:title" content="{{ page_title }}">
-  <meta name="twitter:description" content="{{ page_description }}">
-  <meta name="twitter:image:src" content="{{ page_image }}">
-
-  <!-- Social: Google+ / Schema.org  -->
-  <meta itemprop="name" content="{{ page_title }}">
-  <meta itemprop="description" content="{{ page_description }}">
-  <meta itemprop="image" content="{{ page_image }}">
+  <meta name="twitter:card" content="summary_large_image">
   
   <!-- rel prev and next -->
   {% if paginator.previous_page %}
-    <link rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
   {% if paginator.next_page %}
-    <link rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
 
   <!-- CSS -->

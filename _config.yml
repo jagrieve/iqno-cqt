@@ -4,6 +4,7 @@ description: "Research into integrated devices for QIP and the quantum internet 
 baseurl: ''
 url: 'https://iqno.quantumlah.org'
 github_username: 'jagrieve'
+keywords: 'quantum optics, integrated photonics, nonlinear optics, quantum internet'
 
 og_locale: 'en_SG'
 

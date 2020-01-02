@@ -91,7 +91,7 @@ hr {
 }
 
 .logo {
-  float: left;
+  
   margin: 0 0 1em 0;
   cursor: pointer;
   text-transform: uppercase;
@@ -99,6 +99,10 @@ hr {
   font-size: 20px;
   line-height: 28px;
   font-weight: 300;
+  
+  @media screen and (min-width: $break-large) {
+    float: left;
+  }
 
   span {
     font-weight: 700;
@@ -125,7 +129,7 @@ hr {
 
   li {
     display: inline-block;
-    padding: 0 .6em;
+    padding-right: 1em;
     margin-bottom: 1em;
   }
 
@@ -212,4 +216,30 @@ hr {
     font-size: 0.75rem;
     color: darken($medium-gray-color, 10%);
   }
+}
+
+/* Links in the site footer. */
+.affiliate {
+    display: block;
+    height: 2rem;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 1rem;
+    
+    /* CQT ratio is 5:1 */
+    &.cqt {
+        width: 10rem;
+        background-image: url('/assets/images/cqt_logo.svg');
+        background-size: 100% 100%;
+        border-bottom: 0px;
+    }
+    
+    /* QuantumSG ratio is 2.5:1 */
+    &.quantumsg {
+        width: 5rem;
+        background-image: url('/assets/images/quantumsg_logo.svg');
+        background-size: 100% 100%;
+        border-bottom: 0px;
+    }
 }
