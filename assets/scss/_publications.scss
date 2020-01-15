@@ -7,11 +7,7 @@ ol.bibliography {
   li {
     margin-bottom: 1em;
     position: relative;
-   
-    > *:not(.altmetric-embed) {
-      width: 80%;
-      clear: right;
-    }
+    padding-right: 52px;
    
     .authors {
       color: $medium-gray-color;
