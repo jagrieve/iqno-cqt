@@ -32,3 +32,6 @@
 </span>
   {% endif %}
   {% endif %}
+{% if entry.doi %}
+<div class='altmetric-embed' data-badge-type='donut' data-doi='{{ entry.doi }}' data-hide-less-than='3'></div>
+{% endif %}

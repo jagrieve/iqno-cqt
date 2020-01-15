@@ -6,6 +6,12 @@ ol.bibliography {
  
   li {
     margin-bottom: 1em;
+    position: relative;
+   
+    > *:not(.altmetric-embed) {
+      width: 80%;
+      clear: right;
+    }
    
     .authors {
       color: $medium-gray-color;
@@ -37,4 +43,16 @@ ol.bibliography {
     }
    
   }
+}
+
+.altmetric-embed {
+    zoom: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0px;
+    
+    a {
+      border-width: 0;
+    }
 }
