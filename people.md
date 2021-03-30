@@ -15,6 +15,10 @@ Our team is hosted in the Exploratory Initiatives group at the Centre for Quantu
   [ORCID](https://orcid.org/0000-0002-2800-8317){:.orcid}
   [arXiv](https://arxiv.org/a/grieve_j_1.html){:.arxiv}
   [LinkedIn](https://www.linkedin.com/in/jamesagrieve){:.linkedin}
+  
+* Isa Ahmadalidokht  
+  *Research Associate*
+  [Email](mailto:cqtisaa@nus.edu.sg){:.email}
 
 * Aveek Chandra  
   *Research Fellow (Alex Ling's group)*
@@ -25,10 +29,6 @@ Our team is hosted in the Exploratory Initiatives group at the Centre for Quantu
 * Angelina Frank  
   *PhD student (Alex Ling's group)*
   [Email](mailto:angelina.frank@u.nus.edu){:.email}
-
-* Isa Ahmadalidokht  
-  *Intern*
-  [Email](mailto:I_Alidokht@sbu.ac.ir){:.email}
 
 ---
 
